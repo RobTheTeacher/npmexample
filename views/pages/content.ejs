@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head.ejs") %>
+</head>
+<body>
+    <%- include("../partials/header.ejs") %>
+    
+    <%- include("../partials/menu.ejs") %>
+
+    <% if (title.includes("Games")) { %>
+        <%- include("../partials/games.ejs") %>
+    <% } else { %>
+        <%- include("../partials/characters.ejs") %>
+    <% } %>
+
+
+    <% if (locals.games) { %>
+    <% games.forEach(game => { %>
+        <h2><%= game.name %></h2>
+        <p><%= game.type %></p>
+    <% }) %>
+    <% } %>
+</body>
+</html>

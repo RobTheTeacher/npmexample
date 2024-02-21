@@ -1,0 +1,23 @@
+:root {
+   --text-primary: #ee1c25;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+header {
+    padding: 24px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--text-primary);
+    font-size: 3rem;
+    margin: 0;
+}
